@@ -1,0 +1,35 @@
+{\rtf1\mac\ansicpg10000\cocoartf824\cocoasubrtf480
+{\fonttbl\f0\fmodern\fcharset77 CourierNewPS-BoldMT;\f1\fmodern\fcharset77 CourierNewPSMT;}
+{\colortbl;\red255\green255\blue255;}
+{\info
+{\author malfactor}}\margl1440\margr1440\vieww16420\viewh16480\viewkind1\viewscale150
+\deftab720
+\pard\pardeftab720\li567\ri567\sl276\slmult1\sb100\sa200
+
+\f0\b\fs16 \cf0 Walker-Constructor Pseudocode\
+\pard\pardeftab720\li567\ri567\sl276\slmult1\sb100\sa200
+
+\f1\b0 \cf0 --Task--\
+\pard\pardeftab720\li567\ri567\sl276\slmult1\sb100\sa200\qj
+\cf0 Observe the result of the agents as they perform their task of constructing the object.\
+--Activity--\
+Pick an arbitrary point on a topological manifold, call it (0,0), and run a Cartesian grid in four directions with each ray trajectory 90 degrees from its left and right nearest neighbor in 2 dimensions. Label one axis 'x' and name the other axis firstly encountered in a counterclockwise rotation 'y'.\
+Create three agents who are programmed identically and whose task is to walk, mark, and remember.  Between them, they hold two elastic strings.  Start each at (0,0): one agent (1) walks five units in the positive y direction; two agents walk five units in the negative y direction and walk 90 degrees from their path in opposite directions: (2) in the negative x direction 5 units and (3) in the x direction 5 units.\
+Remember your location on the grid.\
+Draw tight the first elastic string and pin to the edge points (1,2,3). This is the first polygon of three vertices.\
+Scribe circles with a diameter of 2 units filled with quantity 'theta' centered on vertices 2 and 3.\
+\pard\pardeftab720\li1300\ri1647\sl276\slmult1\sb100\sa200\qj
+\cf0 1. Cast a ray that intersects point 'a' continuing to twice the distance walked and mark the edge point '4'. Save the distance (d4).\
+\pard\li1300\ri1647\ql\qnatural\pardirnatural
+\cf0 2. Walk in the +y direction along the string to the grid coordinate (2.5,0) and mark the point 'c'.\
+\
+\pard\pardeftab720\li1300\ri1647\sl276\slmult1\sb100\sa200\qj
+\cf0 3. Walk in the +y direction along the string to the grid coordinate (-2.5,0) and mark the point 'b'.\
+4. Cast a ray that intersects the point 'c' continuing the ray to twice the distance traveled and mark the edge point '5'. Save the distance (d5).\
+5. Cast a ray that intersects the point 'b' continuing the ray to twice the distance traveled and mark the edge point '4'. Save the distance (d6).\
+\pard\pardeftab720\li567\ri567\sl276\slmult1\sb100\sa200\qj
+\cf0 Draw tight the second elastic string and pin to the edge points (4,5,6). This is the second polygon of three vertices.\
+Mark the intersection of the three rays as the center of mass of the triangle centroid as point 'm'.\
+\pard\pardeftab720\li567\ri567\sl276\slmult1\sb100\sa200
+\cf0 --End Activity--\
+}
